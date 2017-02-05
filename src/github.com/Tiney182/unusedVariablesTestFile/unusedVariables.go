@@ -2,15 +2,13 @@ package main
 
 import "fmt"
 
-var gvar int // not an error ?
-
 func main() {
-	var one int
-	two := 2
-	var three int
-	thee = 3
+	var one int // First way of init variable
+	_ = one     // _ is used as an ignored variable
 
-	func(unused string) {
-		fmt.Println("Unused arg. No compile error")
-	}("what?")
+	two := 2         // := is  used to initialise in one line
+	fmt.Println(two) // system out print
+
+	three := 3  // again one line initialise
+	one = three // assigning one to three
 }
